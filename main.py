@@ -43,7 +43,7 @@ def generate_seo_description(client, name, features, keywords, tone_style):
     """
     try:
         response = client.chat.completions.create(
-            model="gpt-oss-120b",
+            model="openai/gpt-oss-20b",
             messages=[
                 {"role": "system", "content": "أنت مساعد مبيعات رقمي محترف تكتب باللغة العربية الفصحى وبشكل منظم جداً."},
                 {"role": "user", "content": prompt}
