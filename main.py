@@ -51,7 +51,7 @@ def generate_seo_description(client, name, features, keywords, tone_style):
             temperature=0.6,
             max_tokens=1000
         )
-        return response.choices.message.content
+        return response.choices[0].message.content
     except Exception as e:
         return f"حدث خطأ أثناء التوليد: {str(e)}"
 
