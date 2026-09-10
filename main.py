@@ -43,7 +43,7 @@ def generate_seo_description(client, name, features, keywords, tone_style):
     """
     try:
         response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="gpt-oss-120b",
             messages=[
                 {"role": "system", "content": "أنت مساعد مبيعات رقمي محترف تكتب باللغة العربية الفصحى وبشكل منظم جداً."},
                 {"role": "user", "content": prompt}
